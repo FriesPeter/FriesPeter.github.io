@@ -234,13 +234,25 @@ body {
   padding-left: 15px;
 }
 .content code,
-.content pre,
 .content figure.highlight {
-  background-color: #f7f7f7;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 100%;
-  line-height: 1.45;
-  overflow: auto;
+  background-color: #c8c8c8 !important;
+  font-family: "Microsoft Yahei", "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 100% !important;
+  line-height: 1.45 !important;
+  overflow: auto !important;
+  padding: 0px 2px 0px 2px !important;
+  border-radius: 8px !important;
+  font-weight: bolder !important;
+}
+.content pre,
+.content td.code {
+  background-color: #1e1e1e !important;
+  font-family: Consolas, "Microsoft Yahei", "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 101% !important;
+  line-height: 1.45 !important;
+  overflow: auto !important;
+  color: #b4b4b4 !important;
+  border-radius: 5px !important;
 }
 pre .comment,
 pre .template_comment,
@@ -248,9 +260,8 @@ pre .diff .header,
 pre .doctype,
 pre .pi,
 pre .lisp .string,
-pre .javadoc,
-pre .meta {
-  color: #8e908c;
+pre .javadoc {
+  color: #51a64a;
 }
 pre .variable,
 pre .attribute,
@@ -272,11 +283,10 @@ pre .parent,
 pre .haskell .type {
   color: #c82829;
 }
-pre .number,
+pre .number {
+  color: #b5cea8;
+}
 pre .preprocessor,
-pre .built_in,
-pre .literal,
-pre .params,
 pre .constant,
 pre .preprocessor .keyword,
 pre .shebang,
@@ -301,7 +311,9 @@ pre .ruby .class .title,
 pre .css .rules .attribute {
   color: #718c00;
 }
-pre .string,
+pre .string {
+  color: #d69d85;
+}
 pre .value,
 pre .inheritance,
 pre .header,
@@ -312,7 +324,12 @@ pre .xml .cdata {
 pre .hexcolor {
   color: #3e999f;
 }
-pre .function,
+pre .function {
+  color: #b4b4b4;
+}
+pre .title {
+  color: #dcdcaa;
+}
 pre .python .decorator,
 pre .python .title,
 pre .ruby .function .title,
@@ -320,7 +337,7 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #569cd6;
 }
 pre .keyword,
 pre .javascript .function,
@@ -331,5 +348,16 @@ pre .css .tag,
 pre .request,
 pre .status,
 pre .nginx .title {
-  color: #8959a8;
+  color: #d8a0df;
+}
+pre .type,
+pre .literal {
+  color: #569cd6;
+}
+pre .built_in {
+  color: #dcdcaa;
+}
+pre .params,
+pre .meta {
+  color: #b4b4b4;
 }
