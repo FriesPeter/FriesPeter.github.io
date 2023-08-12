@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="创建窗口简单窗口的创建窗口（Window）是图形界面的基础，有了窗口我们才能绘制图像，所以，我们要先学会创建窗口
+用以下代码创建一个窗口：
+1234567891011121314#include &amp;lt;helix2d/helix2d.h&amp;gt;using namespace helix2d;int">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="小薯条Peter">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Helix2D"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Helix2D"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Helix2D</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/helix2d.web/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Check if it is a root tag or category page -->
+
+
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/helix2d.web/" title="Helix2D">
+            <!-- <img src="" class="dib h3" alt=""> -->
+            <p class="f3">H</p>
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/" 
+                    title="首页">
+                    首页
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/Tutorial/" 
+                    title="教程">
+                    教程
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/Docs/" 
+                    title="文档">
+                    文档
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/Download/" 
+                    title="下载">
+                    下载
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f-6-l f2-m tc tc-m tg-d1">Helix2D</h1>
+            <p class="f3 fw3 pab-100px tc tc-m"><em>交织创造潜力</em></p>
+            <!-- <p class="f4 fw3 pab-100px tc tc-m tl-ns"></p> -->
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <!-- <i class="header-icon fa "></i> -->
+    </div>
+</div>
+
+
+    <!-- Content -->
+    <div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+        <div class="content">
+            <div class="mw8 center">
+                            
+                    <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
+                        <!-- Main Post Content -->
+                        <h3 id="创建窗口"><a href="#创建窗口" class="headerlink" title="创建窗口"></a><center>创建窗口</center></h3><h4 id="简单窗口的创建"><a href="#简单窗口的创建" class="headerlink" title="简单窗口的创建"></a>简单窗口的创建</h4><p><strong>窗口</strong>（<code>Window</code>）是图形界面的基础，有了窗口我们才能绘制图像，<br>所以，我们要先学会创建窗口</p>
+<p>用以下代码创建一个窗口：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;helix2d/helix2d.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> helix2d;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  <span class="comment">//主函数入口</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Window window;      <span class="comment">//创建一个窗口（重点）</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>)        <span class="comment">//整个程序的循环</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">Sleep</span>(<span class="number">16</span>);      <span class="comment">//休眠主线程，释放CPU占用</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>那么你就会看到以下这个窗口：</p>
+<p><img src="base-window.png" alt="基本窗口" title="一个基本的窗口"></p>
+<p>在学习过 <em>C++</em> 的面向对象思想后，我们不难看出，一个<code>Window</code>类对象即代表一个窗口，我们对这个<code>Window</code>类的对象的所有操作，都将应用到我们实际的窗口中</p>
+<hr>
+
+<p><em>（如果无法理解接下来的概念可以跳过）</em><br>接下来代码的循环乍一看貌似有些难懂，实际上它<strong>只是为了卡住main函数的运行</strong></p>
+<p>为什么我们需要卡住<strong>main</strong>函数的运行？<br>我们都知道，在 <em>C++</em> 中，当main执行到<code>return 0;</code>语句时，整个程序就退出了。当整个程序退出后，我们的窗口也就全部关闭了。但<code>Window</code>类对象并不会卡住main的运行，如果我们不自己卡住main的运行，那我们的窗口就会立即消失</p>
+<p><code>Sleep</code>函数是<strong>Windows API</strong>中的一个函数，是为了休眠程序来释放CPU占用，具体细节呢此处并不多讲<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/win32/api/synchapi/nf-synchapi-sleep">https://learn.microsoft.com/zh-cn/windows/win32/api/synchapi/nf-synchapi-sleep</a></p>
+<h4 id="指定窗口的属性"><a href="#指定窗口的属性" class="headerlink" title="指定窗口的属性"></a>指定窗口的属性</h4><p>可以看到，我们创建的窗口的标题是 <strong>“Helix2D”</strong> ，如果我们想修改它，该怎么做呢？</p>
+<p>通过以下代码可以修改窗口的标题等属性：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;helix2d/helix2d.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> helix2d;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Window window&#123;<span class="string">L&quot;Title&quot;</span>,<span class="number">1000</span>,<span class="number">1000</span>,<span class="literal">nullptr</span>,<span class="number">60</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">Sleep</span>(<span class="number">16</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这是修改后的窗口：</p>
+<p><img src="change-window.png" alt="修改后的窗口" title="窗口的属性被更改了"></p>
+<p>我们发现它的标题变成了”Title”，大小也变了，接下来我们就来讲讲Window类构造函数里传入的参数都是什么意思：</p>
+<ul>
+<li>title：窗口标题，一个<strong>宽字符串</strong>，字符串前要加L表示宽字符串</li>
+<li>width：窗口宽度，一个正整数，决定了窗口的宽度（除去标题栏）</li>
+<li>height：窗口高度，一个正整数，决定了窗口的高度（除去标题栏）</li>
+<li>parent：父窗口，一个<code>Window</code>类的指针，填入nullptr代表没有父窗口</li>
+<li>fps：窗口帧率，你期望的窗口帧率</li>
+</ul>
+<blockquote>
+<p>注：它们都有默认形参</p>
+</blockquote>
+<p>通过这些，你就可以修改窗口的一些基本属性了</p>
+<p>下一篇：<a href="paint.html" title="如何在窗口上绘制图像">绘制图像</a></p>
+
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                <!-- 
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="" target="_blank">
+                            <i class="fa "></i>
+                        </a>
+                    </div>
+                 -->
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                Hexo | 小薯条Peter
+            </div>
+            <div class="f6 f5-ns center tc white pt1 fw3">
+                QQ群: 693409874
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

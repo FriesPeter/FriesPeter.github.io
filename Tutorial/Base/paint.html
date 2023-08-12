@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="绘制图像图像的绘制单元在Helix2D中，图像的绘制是由 画家（Painter）完成的，窗口可以添加需要工作的画家，一个画家，就负责窗口中一个位置的绘画多个画家，组合成了我们看到的画面
+Painter只是一个统称，实际上有负责各种绘制工作的Painter，这次我们就先学习如何在窗口上画一个矩形和圆形">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="小薯条Peter">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Helix2D"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Helix2D"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Helix2D</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/helix2d.web/css/style.css">
+
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+
+<!-- Main Content -->
+<!-- Check if it is a root tag or category page -->
+
+
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+    
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/helix2d.web/" title="Helix2D">
+            <!-- <img src="" class="dib h3" alt=""> -->
+            <p class="f3">H</p>
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/" 
+                    title="首页">
+                    首页
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/Tutorial/" 
+                    title="教程">
+                    教程
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/Docs/" 
+                    title="文档">
+                    文档
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white" 
+                    href="/helix2d.web/Download/" 
+                    title="下载">
+                    下载
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f-6-l f2-m tc tc-m tg-d1">Helix2D</h1>
+            <p class="f3 fw3 pab-100px tc tc-m"><em>交织创造潜力</em></p>
+            <!-- <p class="f4 fw3 pab-100px tc tc-m tl-ns"></p> -->
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <!-- <i class="header-icon fa "></i> -->
+    </div>
+</div>
+
+
+    <!-- Content -->
+    <div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+        <div class="content">
+            <div class="mw8 center">
+                            
+                    <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
+                        <!-- Main Post Content -->
+                        <h3 id="绘制图像"><a href="#绘制图像" class="headerlink" title="绘制图像"></a><center>绘制图像</center></h3><h4 id="图像的绘制单元"><a href="#图像的绘制单元" class="headerlink" title="图像的绘制单元"></a>图像的绘制单元</h4><p>在Helix2D中，图像的绘制是由 <strong>画家</strong>（<code>Painter</code>）完成的，窗口可以添加需要工作的画家，一个画家，就负责窗口中一个位置的绘画<br>多个画家，组合成了我们看到的画面</p>
+<p><code>Painter</code>只是一个统称，实际上有负责各种绘制工作的<code>Painter</code>，这次我们就先学习如何在窗口上<strong>画一个矩形和圆形</strong></p>
+<p>我们用下列代码画一个矩形和圆形：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;helix2d/helix2d.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> helix2d;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Window window&#123; <span class="string">L&quot;Paint&quot;</span> &#125;;              <span class="comment">//创建窗口</span></span><br><span class="line"></span><br><span class="line">    Rect rectangle;</span><br><span class="line">    rectangle.<span class="built_in">setColor</span>(Color::Yellow);      <span class="comment">//设置矩形颜色为黄色</span></span><br><span class="line">    rectangle.<span class="built_in">setPos</span>(<span class="number">100.0f</span>, <span class="number">100.0f</span>);       <span class="comment">//设置矩形要在窗口哪个位置绘制</span></span><br><span class="line"></span><br><span class="line">    Circle circle;                          </span><br><span class="line">    circle.<span class="built_in">setColor</span>(Color::Green);          <span class="comment">//设置圆形颜色为绿色</span></span><br><span class="line">    circle.<span class="built_in">setPos</span>(<span class="number">200.0f</span>, <span class="number">100.0f</span>);          <span class="comment">//设置圆形要在窗口哪个位置绘制</span></span><br><span class="line"></span><br><span class="line">    window.<span class="built_in">addPainter</span>(&amp;rectangle);          <span class="comment">//将它们添加进窗口中</span></span><br><span class="line">    window.<span class="built_in">addPainter</span>(&amp;circle);             <span class="comment">//它们就会根据设定好的要求来绘制了</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">Sleep</span>(<span class="number">16</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>你会看到下面的画面：<br><img src="paint-rect-circle.png" alt="绘制矩形和圆形" title="绘制了一个矩形和圆形"></p>
+<p>突然出现这么多的代码，可能会有点害怕，但当我们逐个解释各个语句的意思，就很容易理解了</p>
+<p>首先，<code>Rect</code>和<code>Circle</code>都是画家，分别负责画矩形和圆形（可能比较精通…），它们分别默认创建一个 边长/直径 为50像素的白色 矩形/圆形</p>
+<p>然后，我们修改了它们的颜色，因为背景颜色也是白色不然看不见。<br>这里呢我们使用了一个新的类：<strong>颜色</strong>（<code>Color</code>），每个颜色对象都代表一种颜色，一律使用 <em>RGBA</em> 的格式。颜色类给出了一些常用颜色，只需要以<strong>Color:: + 颜色名</strong> 的方式就可以获取到颜色了</p>
+<p>接着，我们又修改了它们在窗口的位置（坐标），在Helix2D中，所有坐标系都是<strong>坐标点越向右X越大，越向下Y越大</strong>，单位为像素</p>
+<p>最后，我们将这两个需要工作的画家添加进窗口，它们就开始绘制我们想要的图像了</p>
+
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer -->
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                <!-- 
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="" target="_blank">
+                            <i class="fa "></i>
+                        </a>
+                    </div>
+                 -->
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                Hexo | 小薯条Peter
+            </div>
+            <div class="f6 f5-ns center tc white pt1 fw3">
+                QQ群: 693409874
+            </div>
+        </div>
+    </div>
+
+<!-- After Footer -->
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
