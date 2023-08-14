@@ -10,14 +10,18 @@
 
     <!--Description-->
     
-        <meta name="description" content="Window::Window
+        <meta name="description" content="Window::uninit
 语法
 参数
 返回值
 备注
 
-该方法用于构造一个Window类对象
-语法1234567Window(    std::wstring title = L&amp;quot;Helix2D&amp;quot;,    unsigned int width = 600,     unsign">
+该方法用于程序结束时Window类的清理工作
+语法1static void uninit();
+
+参数无
+返回值无
+备注该方法在程序结束时会被Initialize类自动调用，以回收Window类资源和Renderer类资源若在程序中调用，则后">
     
 
     <!--Author-->
@@ -143,27 +147,18 @@
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="Window-Window"><a href="#Window-Window" class="headerlink" title="Window::Window"></a>Window::Window</h3><ul>
+                        <h3 id="Window-uninit"><a href="#Window-uninit" class="headerlink" title="Window::uninit"></a>Window::uninit</h3><ul>
 <li><a href="#%E8%AF%AD%E6%B3%95">语法</a></li>
 <li><a href="#%E5%8F%82%E6%95%B0">参数</a></li>
 <li><a href="#%E8%BF%94%E5%9B%9E%E5%80%BC">返回值</a></li>
 <li><a href="#%E5%A4%87%E6%B3%A8">备注</a></li>
 </ul>
-<p>该方法用于构造一个Window类对象</p>
-<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Window</span>(</span><br><span class="line">    std::wstring title = <span class="string">L&quot;Helix2D&quot;</span>,</span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> width = <span class="number">600</span>, </span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> height = <span class="number">600</span>,</span><br><span class="line">    Window* parent = <span class="literal">nullptr</span>, </span><br><span class="line">    <span class="type">unsigned</span> <span class="type">int</span> fps = <span class="number">60</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>该方法用于程序结束时Window类的清理工作</p>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">uninit</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
 
-<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><ul>
-<li><code>[in] title</code><br>用于指定窗口的标题<br>若不指定参数，则默认为”Helix2D”</li>
-<li><code>[in] width</code><br>用于指定窗口的宽度<br>若不指定参数，则默认为600</li>
-<li><code>[in] height</code><br>用于指定窗口的高度<br>若不指定参数，则默认为600.</li>
-<li><code>[in] parent</code><br>用于指定窗口的父窗口<br>当该值为nullptr时，则视为没有父窗口<br>若不指定参数，则默认为nullptr</li>
-<li><code>[in] fps</code><br>用于指定期望的窗口帧率<br>Window类会以<strong>1/帧率</strong>每秒的时间为间隔更新窗口<br>若不指定参数，则默认为60</li>
-</ul>
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>无</p>
 <h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>无</p>
-<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>该方法会初始化整个Window对象，并将所有传入的信息保存到对象中，同时动态创建渲染器（Renderer）。随后将地址信息存入<code>[private] allWindow</code>容器中进行管理，随后创建窗口线程，开始窗口循环</p>
-<blockquote>
-<p><strong>注意：构造对象不代表窗口创建，实际上，窗口创建在窗口线程中执行</strong><br><strong>所以实际的窗口创建在构造对象之后才开始</strong></p>
-</blockquote>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>该方法在程序结束时会被<code>Initialize</code>类自动调用，<strong>以回收Window类资源和Renderer类资源</strong><br>若在程序中调用，则后果未定义</p>
 
                     </div>
                 
