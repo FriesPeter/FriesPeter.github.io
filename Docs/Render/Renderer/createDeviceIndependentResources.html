@@ -10,14 +10,17 @@
 
     <!--Description-->
     
-        <meta name="description" content="文档Helix2D提供了API的文档以帮助开发者更好地学习和了解Helix2D的API
+        <meta name="description" content="Renderer::createDeviceIndependentResources
+语法
+参数
+返回值
+备注
 
-基础部分
-渲染部分
-模块部分
-工具部分
-内置部分
-预处理部分">
+该方法用于创建设备无关资源，这些资源的生存期与程序相同
+语法1static bool createDeviceIndependentResources();
+
+参数无
+返回值是否成功创建">
     
 
     <!--Author-->
@@ -27,7 +30,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Docs"/>
+        <meta property="og:title" content="Helix2D"/>
     
 
     <!--Open Graph Description-->
@@ -38,7 +41,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
     
 
     <!--Page Cover-->
@@ -143,15 +146,18 @@
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a><center>文档</center></h3><p>Helix2D提供了API的文档以帮助开发者更好地学习和了解Helix2D的API</p>
-<ul>
-<li><a href="Base">基础部分</a></li>
-<li><a href="Render">渲染部分</a></li>
-<li><a href="#">模块部分</a></li>
-<li><a href="#">工具部分</a></li>
-<li><a href="#">内置部分</a></li>
-<li><a href="#">预处理部分</a></li>
+                        <h3 id="Renderer-createDeviceIndependentResources"><a href="#Renderer-createDeviceIndependentResources" class="headerlink" title="Renderer::createDeviceIndependentResources"></a>Renderer::createDeviceIndependentResources</h3><ul>
+<li><a href="#%E8%AF%AD%E6%B3%95">语法</a></li>
+<li><a href="#%E5%8F%82%E6%95%B0">参数</a></li>
+<li><a href="#%E8%BF%94%E5%9B%9E%E5%80%BC">返回值</a></li>
+<li><a href="#%E5%A4%87%E6%B3%A8">备注</a></li>
 </ul>
+<p>该方法用于创建设备无关资源，这些资源的生存期与程序相同</p>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">static</span> <span class="type">bool</span> <span class="title">createDeviceIndependentResources</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>无</p>
+<h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>是否成功创建设备无关资源，是则返回true，否则返回false</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>该方法在程序开始前将被<code>Initialize</code>类自动调用创建资源，用户无需手动调用</p>
 
                     </div>
                 
