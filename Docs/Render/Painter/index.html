@@ -10,17 +10,23 @@
 
     <!--Description-->
     
-        <meta name="description" content="Renderer类Helix2D用于创建和管理底层渲染资源的渲染接口
-该接口的所有渲染资源都是公开的（public）
-该类定义位于h2dRender.h文件中该类实现位于Renderer.cpp文件中
+        <meta name="description" content="Painter类Helix2D用于绘制图像的渲染接口
+该类定义位于h2dRender.h文件中该类实现位于Painter.cpp文件中
 
 构造方法
-析构方法
 
 
 
-createDeviceResources
-discardDevice">
+addPainter
+addModule
+removePainter
+removeModule
+
+
+坐标
+
+setPos-xy
+setPos-ve">
     
 
     <!--Author-->
@@ -146,19 +152,35 @@ discardDevice">
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="Renderer类"><a href="#Renderer类" class="headerlink" title="Renderer类"></a>Renderer类</h3><p>Helix2D用于创建和管理底层渲染资源的渲染接口</p>
-<p>该接口的所有渲染资源都是公开的（public）</p>
-<p>该类定义位于h2dRender.h文件中<br>该类实现位于Renderer.cpp文件中</p>
+                        <h3 id="Painter类"><a href="#Painter类" class="headerlink" title="Painter类"></a>Painter类</h3><p>Helix2D用于绘制图像的渲染接口</p>
+<p>该类定义位于h2dRender.h文件中<br>该类实现位于Painter.cpp文件中</p>
 <ul>
 <li><a href="constructor.html">构造方法</a></li>
-<li><a href="destructor.html">析构方法</a></li>
 </ul>
 <hr>
 <ul>
-<li><a href="createDeviceResources.html">createDeviceResources</a></li>
-<li><a href="discardDeviceResources.html">discardDeviceResources</a></li>
-<li><a href="createDeviceIndependentResources.html">createDeviceIndependentResources</a></li>
-<li><a href="discardResources.html">discardResources</a></li>
+<li><a href="addPainter.html">addPainter</a></li>
+<li><a href="addModule.html">addModule</a></li>
+<li><a href="removePainter.html">removePainter</a></li>
+<li><a href="removeModule.html">removeModule</a></li>
+</ul>
+<hr>
+<p><strong>坐标</strong></p>
+<ul>
+<li><a href="setPos-xy.html">setPos-xy</a></li>
+<li><a href="setPos-vector.html">setPos-vector</a></li>
+<li><a href="setPosX.html">setPosX</a></li>
+<li><a href="setPosY.html">setPosY</a></li>
+</ul>
+<p><strong>缩放</strong></p>
+<ul>
+<li><a href="setScale-scale.html">setScale-scale</a></li>
+<li><a href="setScale-xy.html">setScale-xy</a></li>
+</ul>
+<p><strong>锚点</strong></p>
+<ul>
+<li><a href="setAnchor-vector.html">setAnchor-vector</a></li>
+<li><a href="setAnchor-xy.html">setAnchor-xy</a></li>
 </ul>
 
                     </div>
