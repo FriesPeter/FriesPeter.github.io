@@ -10,23 +10,20 @@
 
     <!--Description-->
     
-        <meta name="description" content="Painter类Helix2D用于绘制图像的渲染接口
-该类定义位于h2dRender.h文件中该类实现位于Painter.cpp文件中
+        <meta name="description" content="Painter::setOrder设置Painter的渲染顺序
 
-构造方法
+语法
+参数
+返回值
+备注
 
+语法1void setOrder(size_t nOrder);
 
+参数
+[in] nOrder新的渲染顺序
 
-addPainter
-addModule
-removePainter
-removeModule
-
-
-坐标
-
-setPos-xy
-setPos-ve">
+返回值无
+备注该顺序决定将在父Painter的子Painter中何时被渲染（包括更新），根据O">
     
 
     <!--Author-->
@@ -152,64 +149,20 @@ setPos-ve">
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="Painter类"><a href="#Painter类" class="headerlink" title="Painter类"></a>Painter类</h3><p>Helix2D用于绘制图像的渲染接口</p>
-<p>该类定义位于h2dRender.h文件中<br>该类实现位于Painter.cpp文件中</p>
+                        <h3 id="Painter-setOrder"><a href="#Painter-setOrder" class="headerlink" title="Painter::setOrder"></a>Painter::setOrder</h3><p>设置Painter的渲染顺序</p>
 <ul>
-<li><a href="constructor.html">构造方法</a></li>
+<li><a href="#%E8%AF%AD%E6%B3%95">语法</a></li>
+<li><a href="#%E5%8F%82%E6%95%B0">参数</a></li>
+<li><a href="#%E8%BF%94%E5%9B%9E%E5%80%BC">返回值</a></li>
+<li><a href="#%E5%A4%87%E6%B3%A8">备注</a></li>
 </ul>
-<hr>
-<ul>
-<li><a href="addPainter.html">addPainter</a></li>
-<li><a href="addModule.html">addModule</a></li>
-<li><a href="removePainter.html">removePainter</a></li>
-<li><a href="removeModule.html">removeModule</a></li>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">setOrder</span><span class="params">(<span class="type">size_t</span> nOrder)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><ul>
+<li><code>[in] nOrder</code><br>新的渲染顺序</li>
 </ul>
-<hr>
-<p><strong>坐标</strong></p>
-<ul>
-<li><a href="setPos-xy.html">setPos-xy</a></li>
-<li><a href="setPos-vector.html">setPos-vector</a></li>
-<li><a href="setPosX.html">setPosX</a></li>
-<li><a href="setPosY.html">setPosY</a></li>
-</ul>
-<p><strong>缩放</strong></p>
-<ul>
-<li><a href="setScale-scale.html">setScale-scale</a></li>
-<li><a href="setScale-xy.html">setScale-xy</a></li>
-</ul>
-<p><strong>锚点</strong></p>
-<ul>
-<li><a href="setAnchor-vector.html">setAnchor-vector</a></li>
-<li><a href="setAnchor-xy.html">setAnchor-xy</a></li>
-</ul>
-<p><strong>旋转</strong></p>
-<ul>
-<li><a href="setAngle.html">setAngle</a></li>
-</ul>
-<p><strong>颜色</strong></p>
-<ul>
-<li><a href="setColor.html">setColor</a></li>
-</ul>
-<p><strong>翻转</strong></p>
-<ul>
-<li><a href="setFlipX.html">setFlipX</a></li>
-<li><a href="setFlipY.html">setFlipY</a></li>
-</ul>
-<p><strong>速度</strong></p>
-<ul>
-<li><a href="setVelocity-vector.html">setVelocity-vector</a></li>
-<li><a href="setVelocity-xy.html">setVelocity-xy</a></li>
-<li><a href="setVelocityX.html">setVelocityX</a></li>
-<li><a href="setVelocityY.html">setVelocityY</a></li>
-</ul>
-<p><strong>质量</strong></p>
-<ul>
-<li><a href="setMass.html">setMass</a></li>
-</ul>
-<p><strong>渲染顺序</strong></p>
-<ul>
-<li><a href="setOrder.html">setOrder</a></li>
-</ul>
+<h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>无</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>该顺序决定将在父Painter的子Painter中何时被渲染（包括更新），根据Order使用std::sort对子Painter进行排序<br><strong>顺序数字越大，显示越上层，顺序数字越小，显示越下层</strong></p>
 
                     </div>
                 
