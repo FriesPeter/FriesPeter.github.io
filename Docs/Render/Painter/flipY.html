@@ -10,24 +10,18 @@
 
     <!--Description-->
     
-        <meta name="description" content="Painter类Helix2D用于绘制图像的渲染接口
-该类定义位于h2dRender.h文件中该类实现位于Painter.cpp文件中
+        <meta name="description" content="Painter::flipY翻转一次Painter Y轴（左右翻转）
 
-构造方法
+语法
+参数
+返回值
+备注
 
+语法1void flipY();
 
-
-addPainter
-addModule
-removePainter
-removeModule
-
-
-坐标
-
-setPos-xy
-
-setPos-v">
+参数无
+返回值无
+备注如果调用该方法时，Painter Y轴已经翻转，则将其改成不翻转；如果调用该方法时，Painter Y轴没有翻转，则将其改成翻转">
     
 
     <!--Author-->
@@ -153,109 +147,18 @@ setPos-v">
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="Painter类"><a href="#Painter类" class="headerlink" title="Painter类"></a>Painter类</h3><p>Helix2D用于绘制图像的渲染接口</p>
-<p>该类定义位于h2dRender.h文件中<br>该类实现位于Painter.cpp文件中</p>
+                        <h3 id="Painter-flipY"><a href="#Painter-flipY" class="headerlink" title="Painter::flipY"></a>Painter::flipY</h3><p>翻转一次Painter Y轴（左右翻转）</p>
 <ul>
-<li><a href="constructor.html">构造方法</a></li>
+<li><a href="#%E8%AF%AD%E6%B3%95">语法</a></li>
+<li><a href="#%E5%8F%82%E6%95%B0">参数</a></li>
+<li><a href="#%E8%BF%94%E5%9B%9E%E5%80%BC">返回值</a></li>
+<li><a href="#%E5%A4%87%E6%B3%A8">备注</a></li>
 </ul>
-<hr>
-<ul>
-<li><a href="addPainter.html">addPainter</a></li>
-<li><a href="addModule.html">addModule</a></li>
-<li><a href="removePainter.html">removePainter</a></li>
-<li><a href="removeModule.html">removeModule</a></li>
-</ul>
-<hr>
-<p><strong>坐标</strong></p>
-<ul>
-<li><p><a href="setPos-xy.html">setPos-xy</a></p>
-</li>
-<li><p><a href="setPos-vector.html">setPos-vector</a></p>
-</li>
-<li><p><a href="setPosX.html">setPosX</a></p>
-</li>
-<li><p><a href="setPosY.html">setPosY</a></p>
-<br/></li>
-<li><p><a href="movePos-xy.html">movePos-xy</a></p>
-</li>
-<li><p><a href="movePos-vector.html">movePos-vector</a></p>
-</li>
-<li><p><a href="movePosX.html">movePosX</a></p>
-</li>
-<li><p><a href="movePosY.html">movePosY</a></p>
-<br/></li>
-<li><p><a href="moveAhead.html">moveAhead</a></p>
-</li>
-<li><p><a href="moveAhead-angle.html">moveAhead-angle</a></p>
-</li>
-</ul>
-<p><strong>缩放</strong></p>
-<ul>
-<li><a href="setScale-scale.html">setScale-scale</a></li>
-<li><a href="setScale-xy.html">setScale-xy</a></li>
-</ul>
-<p><strong>锚点</strong></p>
-<ul>
-<li><a href="setAnchor-vector.html">setAnchor-vector</a></li>
-<li><a href="setAnchor-xy.html">setAnchor-xy</a></li>
-</ul>
-<p><strong>旋转</strong></p>
-<ul>
-<li><a href="setAngle.html">setAngle</a></li>
-<li><a href="rotate.html">rotate</a></li>
-</ul>
-<p><strong>颜色</strong></p>
-<ul>
-<li><a href="setColor.html">setColor</a></li>
-</ul>
-<p><strong>翻转</strong></p>
-<ul>
-<li><p><a href="setFlipX.html">setFlipX</a></p>
-</li>
-<li><p><a href="setFlipY.html">setFlipY</a></p>
-<br/></li>
-<li><p><a href="flipX.html">flipX</a></p>
-</li>
-<li><p><a href="flipY.html">flipY</a></p>
-</li>
-</ul>
-<p><strong>速度</strong></p>
-<ul>
-<li><p><a href="setVelocity-vector.html">setVelocity-vector</a></p>
-</li>
-<li><p><a href="setVelocity-xy.html">setVelocity-xy</a></p>
-</li>
-<li><p><a href="setVelocityX.html">setVelocityX</a></p>
-</li>
-<li><p><a href="setVelocityY.html">setVelocityY</a></p>
-<br/></li>
-<li><p><a href="addVelocity-vector.html">addVelocity-vector</a></p>
-</li>
-<li><p><a href="addVelocity-xy.html">addVelocity-xy</a></p>
-</li>
-<li><p><a href="addVelocityX.html">addVelocityX</a></p>
-</li>
-<li><p><a href="addVelocityY.html">addVelocityY</a></p>
-<br/></li>
-<li><p><a href="addVelocityAhead.html">addVelocityAhead</a></p>
-</li>
-<li><p><a href="addVelocityAhead-angle.html">addVelocityAhead-angle</a></p>
-</li>
-</ul>
-<p><strong>质量</strong></p>
-<ul>
-<li><a href="setMass.html">setMass</a></li>
-</ul>
-<p><strong>渲染顺序</strong></p>
-<ul>
-<li><a href="setOrder.html">setOrder</a></li>
-</ul>
-<p><strong>设置启用</strong></p>
-<ul>
-<li><a href="enableTick.html">enableTick</a></li>
-<li><a href="enableRender.html">enableRender</a></li>
-<li><a href="enableUpdate.html">enableUpdate</a></li>
-</ul>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">flipY</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>无</p>
+<h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>无</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>如果调用该方法时，<strong>Painter Y轴已经翻转，则将其改成不翻转</strong>；<br>如果调用该方法时，<strong>Painter Y轴没有翻转，则将其改成翻转</strong></p>
 
                     </div>
                 
