@@ -162,11 +162,12 @@
 <li><code>[in] pPainter</code><br>要添加的子Painter的指针</li>
 </ul>
 <h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>无</p>
-<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>添加子Painter对于子Painter有3个要求：</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>添加子Painter对于子Painter有4个要求：</p>
 <ul>
 <li>子Painter<strong>不为nullptr</strong></li>
 <li>子Painter<strong>未被添加到任何窗口</strong></li>
 <li>子Painter<strong>未被添加到任何Painter下</strong></li>
+<li>子Painter<strong>不与其他子Painter重名</strong></li>
 </ul>
 <p>如果满足要求，则子Painter的父Painter将设置为该Painter，<br>子Painter及以下的所有Painter的所属窗口都将设置为该Painter所属的窗口</p>
 <blockquote>
