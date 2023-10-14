@@ -10,13 +10,18 @@
 
     <!--Description-->
     
-        <meta name="description" content="渲染部分这些渲染部分用于在窗口上绘制图像
+        <meta name="description" content="Line::getRealBoundingHeight
+语法
+参数
+返回值
+备注
 
-Renderer类
+该方法用于获取能够包围线段原始大小的包围盒的高度
+语法1float getRealBoundingHeight()const;
 
-Painter类
-
-Line类">
+参数无
+返回值能够包围线段原始大小的包围盒的高度
+备注该包围盒宽度是一个能够正好包围线">
     
 
     <!--Author-->
@@ -142,15 +147,18 @@ Line类">
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="渲染部分"><a href="#渲染部分" class="headerlink" title="渲染部分"></a><center>渲染部分</center></h3><p>这些渲染部分用于在窗口上绘制图像</p>
-<ul>
-<li><p><a href="Renderer">Renderer类</a></p>
-</li>
-<li><p><a href="Painter">Painter类</a></p>
-<br></li>
-<li><p><a href="Line">Line类</a></p>
-</li>
+                        <h3 id="Line-getRealBoundingHeight"><a href="#Line-getRealBoundingHeight" class="headerlink" title="Line::getRealBoundingHeight"></a>Line::getRealBoundingHeight</h3><ul>
+<li><a href="#%E8%AF%AD%E6%B3%95">语法</a></li>
+<li><a href="#%E5%8F%82%E6%95%B0">参数</a></li>
+<li><a href="#%E8%BF%94%E5%9B%9E%E5%80%BC">返回值</a></li>
+<li><a href="#%E5%A4%87%E6%B3%A8">备注</a></li>
 </ul>
+<p>该方法用于获取能够包围线段原始大小的包围盒的高度</p>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">float</span> <span class="title">getRealBoundingHeight</span><span class="params">()</span><span class="type">const</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>无</p>
+<h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>能够包围线段原始大小的包围盒的高度</p>
+<h4 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h4><p>该包围盒宽度是一个能够正好包围线段原始大小的高度，比realHeight考虑到了线段宽度（一个测试阶段中的方法）</p>
 
                     </div>
                 
