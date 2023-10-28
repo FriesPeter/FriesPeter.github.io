@@ -10,20 +10,11 @@
 
     <!--Description-->
     
-        <meta name="description" content="Window类Helix2D用于创建和操控窗口的基础API
-该类定义位于h2dBase.h文件中该类实现位于Window.cpp文件中
-
-构造方法
-析构方法
-
-
-
-addPainter
-removePainter
-setBackgroundColor
-setFPS
-setCamera
-setFull">
+        <meta name="description" content="Color类Color类表示颜色，它包含RGB值，以及透明度
+Color类提供了一系列常用的颜色，关于它们请重点查阅enum 颜色值
+Color类的r，g，b，a属性分别表示RGB和透明度，它们都是公开的（public）
+Color类对象可以直接转换成D2D1_COLOR_F对象
+该类定义位于h2d">
     
 
     <!--Author-->
@@ -149,31 +140,24 @@ setFull">
                             
                     <div class="mw7 fw3 lh-copy post-content di-ns" style="font-size: 1.2em;">
                         <!-- Main Post Content -->
-                        <h3 id="Window类"><a href="#Window类" class="headerlink" title="Window类"></a>Window类</h3><p>Helix2D用于创建和操控窗口的基础API</p>
-<p>该类定义位于h2dBase.h文件中<br>该类实现位于Window.cpp文件中</p>
+                        <h3 id="Color类"><a href="#Color类" class="headerlink" title="Color类"></a>Color类</h3><p>Color类表示颜色，它包含RGB值，以及透明度</p>
+<p>Color类提供了一系列常用的颜色，关于它们请重点查阅<code>enum 颜色值</code></p>
+<p>Color类的r，g，b，a属性分别表示RGB和透明度，它们都是公开的（public）</p>
+<p>Color类对象可以直接转换成D2D1_COLOR_F对象</p>
+<p>该类定义位于h2dRender.h文件中<br>该类实现位于Renderer.cpp文件中</p>
 <ul>
-<li><a href="constructor.html">构造方法</a></li>
-<li><a href="destructor.html">析构方法</a></li>
+<li><a href="constructor-r-g-b.html">构造方法-r-g-b</a></li>
+<li><a href="constructor-rgb.html">构造方法-rgb</a></li>
 </ul>
 <hr>
 <ul>
-<li><a href="addPainter.html">addPainter</a></li>
-<li><a href="removePainter.html">removePainter</a></li>
-<li><a href="setBackgroundColor.html">setBackgroundColor</a></li>
-<li><a href="setFPS.html">setFPS</a></li>
-<li><a href="setCamera.html">setCamera</a></li>
-<li><a href="setFullScreen.html">setFullScreen</a></li>
+<li><a href="setColor-r-g-b.html">setColor-r-g-b</a></li>
+<li><a href="setColor-rgb.html">setColor-rgb</a></li>
 </ul>
 <hr>
 <ul>
-<li><a href="getWidth.html">getWidth</a></li>
-<li><a href="getHeight.html">getHeight</a></li>
-<li><a href="getHWND.html">getHWND</a></li>
-<li><a href="getRenderer.html">getRenderer</a></li>
-<li><a href="getAllPainter.html">getAllPainter</a></li>
-<li><a href="getCamera.html">getCamera</a></li>
+<li><a href="color-value.html">enum 颜色值</a></li>
 </ul>
-<hr>
 
                     </div>
                 
